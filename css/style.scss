@@ -1,0 +1,424 @@
+html{
+    width: 100%;
+}
+body{
+    width: 100%;
+    min-width: 375px;
+    background-color: #fff;
+    font-family: "微軟正黑體" ;
+}
+.SrOnly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+ 
+.container-fluid{
+    padding: 0;
+}
+
+
+#TopLine{
+    width: 100%;
+    height: 20px;
+    background-color: #4c2b10;
+}
+
+.Wrapper{
+    width: 100%;
+    @media screen and (min-width: 991px){
+        position: relative;
+    width: 991px / 1980px *100%;
+    min-width: 991px;
+    margin: 0 auto;
+    }
+}
+.Title{
+    position: relative;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #323232;
+    width: 100px;
+    border: solid 0.5px #717171;
+    text-align: center;
+        .BottomBorder{ 
+            width: 90px;
+            margin: 0 auto;
+            height: 50px;
+            border-bottom: solid 0.5px #717171; 
+            span{
+                font-size: 14px;
+                line-height: 50px;
+                letter-spacing: 3px;;
+                font-weight: bold;
+            }
+         }
+            p{
+            font-size: 12px;
+            height:50px;
+            line-height: 50px;
+            font-family: "Comic Sans MS";
+            letter-spacing: 5px;; 
+            }
+        @media screen and (min-width: 991px){
+            position: static;
+            margin: 0;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            border: solid 2px #717171; 
+            .BottomBorder{ 
+                width: 190px;
+                margin: 0 auto;
+                height: 100px;
+                border-bottom: solid 2px #717171; 
+                span{
+                    font-size: 24px;
+                    line-height: 100px;
+                    letter-spacing: 10px;;
+                    font-weight: bold;
+                }
+            }
+            p{
+                font-size: 20px;
+                height:100px;
+                line-height: 100px;
+                font-family: "Comic Sans MS";
+                letter-spacing: 10px;; 
+            }
+        }   
+    
+
+}
+/*--------------------手機--------------------*/
+/*//////////////Header//////////////*/
+header{
+    margin:0;
+    margin-bottom: 50px;
+    #LogoIcon{
+        position: relative;
+        top: 0;
+        min-height:150px;
+        margin-top: 15px;
+        @media screen and (min-width: 991px){
+            padding: 0;
+            padding-top: 20px;
+        }
+    }
+    #MenuIcon{ 
+        margin-top:-50px;
+        padding: 0;
+        min-height: 50px;
+        z-index: 999;
+        display: block;
+        background-image: url(/img/index/MENU_ICON.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+        @media screen and (min-width: 991px) {
+            display: none;
+        }
+    }
+    #MenuList{
+        display: none;/*隱藏*/
+        background-color: #865e35;
+        overflow: hidden;
+        border-radius: 0 0 50px 50px;
+        @media screen and (min-width: 991px) {
+            position: absolute;
+            right: 0;
+            background-color: inherit;
+            border: none;
+            margin-top:-80px;
+            margin-bottom: 30px;
+            padding: 0;
+        }
+        ul>li{
+            border-bottom: #fff7d1 solid 1px;
+        
+             a{
+                text-decoration: none;
+                text-align: center;
+                color: #fff;
+                display: block;
+                height: 50px;
+                h3{
+                    line-height: 40px;
+                    font-size: 16px;
+                 }
+                 p{
+                    font-size: 12px;
+                    font-family: "Comic Sans MS";
+                    font-weight: normal;
+                    margin-top:-10px;
+                 }
+             }
+             @media screen and (min-width: 991px){
+                float: left;
+                border: none;
+                width: 100px;
+                height: 100px;
+                padding: 0;
+                margin-right:20px;
+                border-radius: 50px;
+                a{  
+                    width: 100px;
+                    height: 100px;;
+                    display: block;
+                    color: #323232;
+                    border-radius: 50px;
+                    &:hover{
+                        color: #fff7d1;
+                        background-color: #865e35;
+                        p{
+                            display: none;
+                        }
+                        h3{
+                            font-weight: normal;
+                        }
+                    }
+                    h3{
+                        padding-top:30px;
+                        font-size: 20px;
+                    }
+                    p{
+                        text-align: right;
+                        margin-right: 10px;
+                    }
+                }
+            }        
+        }
+        .BorderNone{
+            border-bottom: none;
+        }
+    }
+}
+/*//////////////Header End//////////////*/
+/*//////////////Banner//////////////*/
+#Banner{
+    position: relative;
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}
+
+/*//////////////Banner End//////////////*/
+/*//////////////Story//////////////*/
+#Story{
+        margin: 0;
+        padding-bottom:10px;
+        overflow: hidden;
+        background-image: url(/img/index/STORY_M.jpg);
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: 170%;
+
+}
+#Story>.StoryWords{
+    font-size: 14px;
+    line-height: 24px;
+    text-align: justify;
+}
+#Story>.StoryImg{
+    display: none;
+}
+@media screen and (min-width: 991px){
+    #Story{
+    background-image: inherit;
+    }
+    #Story>.Title{
+       margin-top: 120px;
+       margin-left: 0;
+    }
+    #Story>.StoryWords{
+        margin-top: -240px;
+        margin-left: 12em;
+        padding: 0;
+        font-size: 20px;
+        line-height: 30px;
+        p{
+            margin-top:30px;
+        }
+    }
+    #Story>.StoryImg{
+        display: block;
+        margin-top: -300px;
+        margin-left: 41.875em; 
+        img{
+            width: 100%;
+        }
+    }
+}  
+/*//////////////Story end//////////////*/
+/*//////////////Hot//////////////*/
+#Hot{
+    overflow: hidden;  
+}
+#Hot>nav{
+    padding: 0 1%;
+    ul{
+        text-align: center;
+        li{
+            float: left;
+            padding: 0;
+            margin-bottom: 10px;
+            padding: 0 1%;
+            a{  
+                width: 100%;
+                text-decoration: none;
+                display: block;
+                color: #000;
+                font-size: 0.9em;
+                img{
+                    width: 100%;
+                }
+            }       
+        }
+        #PcHotItem{
+            display: none;
+        }
+    }
+}
+@media screen and (min-width: 991px){
+    #Hot>.Title{
+        position: relative;
+        left: 50%;
+        top: 120px;
+        margin-left: -100px;
+        z-index: 999;
+    }
+    #Hot>nav{
+        margin-top: -140px;
+        #HotItem_Right{
+            margin-left: 33.333333%;
+        }
+    }
+    #Hot>nav>ul>li>a>span{
+        position: relative;
+        font-size: 20px;
+        font-weight: bold;
+        top:-170px;
+        visibility: hidden;
+    }
+    #Hot>nav>ul>li>a:hover{
+        img{opacity: 0.5;}
+        span{visibility: visible;}
+    }
+    #Hot>nav>ul>#PcHotItem{
+        display: block;
+    }
+    }
+/*//////////////Hot End//////////////*/
+/*//////////////Contact//////////////*/
+#Contact{
+    padding: 15px;
+}
+#Contact>.raw>h2{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 24px;
+    img{
+        position: relative;
+        top: 3px;
+        width: 25px;
+        margin-right: 3px;
+    }
+}
+#Map{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    iframe{
+        width: 400px;
+        height: 400px;
+        border: 0;
+    }
+}
+@media screen and (min-width: 991px){
+    #Contact{
+        position: relative;
+        width: 991px;
+        margin:40px auto 15px auto;
+        overflow: hidden;
+    }
+    #Contact>.Title{
+     float: right;
+    }
+    
+    #Contact>.raw{
+        margin-left: -100px;
+        h2{
+            text-align: left;
+            font-size: 20px;
+            font-weight: normal;
+            margin-bottom: 40px;
+            p{
+                line-height: 40px;
+            }
+        }
+    }
+    #Map{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 400px;
+        height: 400px;
+        iframe{
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    }
+}
+/*//////////////Contact End//////////////*/
+/*//////////////Footer//////////////*/
+footer{
+    background-color: #4c2b10;
+    height: 180px;
+}
+ footer>nav{  
+     ul{
+        li{
+            width: 100%;
+            float: left;
+            margin-top: 20px;
+            a{  
+                width: 100%;
+                display: block;
+                width: 50px;
+                img{
+                    width: 100%;
+                }
+            }
+        } 
+    }
+    @media screen and (max-width: 991px)and (min-width: 575px) {
+        margin-left: 2.5em;
+    }
+}
+footer>span{
+        float: left;
+        color: #fff;
+        font-size: 0.5em;
+        text-align: center;
+        margin-top:20px;
+}
+@media screen and (min-width: 991px){ 
+    footer>nav>ul>li>a{
+        width: 50px;
+        margin-left: -40px;
+        margin-top: 15px;
+    }
+}
+/*//////////////Footer End//////////////*/    
